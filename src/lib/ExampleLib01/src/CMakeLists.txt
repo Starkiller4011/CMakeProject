@@ -1,0 +1,5 @@
+librarylist(SUBLIBRARIES ${CMAKE_CURRENT_SOURCE_DIR})
+foreach(SUBLIBRARY ${SUBLIBRARIES})
+    message("Adding source files for sub-library: ${FULL_LIBRARY_NAME}::${SUBLIBRARY}")
+    add_subdirectory(${SUBLIBRARY})
+endforeach()
